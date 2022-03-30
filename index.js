@@ -73,7 +73,6 @@ class Train {
             if (this.target.passengers < 0) {
                 this.target.passengers = 0
             }
-
             this.target = null
         }
 
@@ -110,4 +109,5 @@ window.addEventListener("click", (event) => {
 })
 
 animate()
+
 console.log(canvas.width, canvas.height)
