@@ -86,11 +86,6 @@ class Train {
         if (this.rect.top < this.target.rect.bottom && this.rect.left < this.target.rect.right &&
             this.rect.bottom > this.target.rect.top && this.rect.right > this.target.rect.left) {
             this.velocity = {x: 0, y: 0}
-
-            this.target.passengers -= train.capacity
-            if (this.target.passengers < 0) {
-                this.target.passengers = 0
-            }
             
             this.from = this.target
             this.target = null
