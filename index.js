@@ -87,14 +87,12 @@ class Train {
             this.rect.bottom > this.target.rect.top && this.rect.right > this.target.rect.left) {
             this.velocity = {x: 0, y: 0}
 
-<<<<<<< Updated upstream
             this.target.passengers -= train.capacity
             if (this.target.passengers < 0) {
                 this.target.passengers = 0
             }
-=======
+            
             this.from = this.target
->>>>>>> Stashed changes
             this.target = null
             this.passengers = 0
 
